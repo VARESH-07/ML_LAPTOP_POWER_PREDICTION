@@ -1,0 +1,41 @@
+{
+  "model_name": "Ridge Regression",
+  "trained_at": "2026-10-09T22:55:21.363735",
+  "target_column": "discharge_power_w",
+  "target_unit": "Watts",
+  "features": [
+    "cpu_util_pct",
+    "cpu_freq_mhz",
+    "ram_util_pct",
+    "ram_used_gb",
+    "gpu_util_pct",
+    "battery_pct",
+    "battery_voltage_v",
+    "charging_status",
+    "workload_label",
+    "power_profile"
+  ],
+  "numerical_features": [
+    "cpu_util_pct",
+    "cpu_freq_mhz",
+    "ram_util_pct",
+    "ram_used_gb",
+    "gpu_util_pct",
+    "battery_pct",
+    "battery_voltage_v"
+  ],
+  "categorical_features": [
+    "charging_status",
+    "workload_label",
+    "power_profile"
+  ],
+  "metrics": {
+    "mae": 3.9119,
+    "rmse": 4.6771,
+    "r2": -0.6211,
+    "max_error": 13.5599
+  },
+  "num_training_samples": 1228,
+  "is_synthetic_data": true,
+  "pipeline_class": "Pipeline"
+}
